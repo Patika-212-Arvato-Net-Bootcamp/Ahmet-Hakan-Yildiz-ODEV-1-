@@ -15,16 +15,6 @@ sealed class 9mm : Bullet  // Sealed Class'ta tanımlanan kodlar sabit kodlardı
 }
 
 
-public class Uzi : Weapon //Normal class'larda ise geliştirici bunun daha da geliştirilebilir ya da başka özelliklerin de eklenebileceğini ifade eder.
-
-{
-
-	public int sarjor=35;
-	this.BackColor = Color.Blue;
-	this.Size=120;
-	
-}
-
 public class BurnEffect : 9mm // Bu class 9mm Class'ından miras alamaz çünkü 9mm Class'ı mühürlenmiş yani Sealed Class olarak tanımlanmıştır, geliştirmeye kapalı sabit kodlardır. 9mm class'ına override gerçekleştiremez.
 
 {
